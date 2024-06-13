@@ -3,7 +3,7 @@ import { getCabins } from "../../services/apiCabins";
 
 export function useCabins() {
   const { isLoading, data: cabins } = useQuery({
-    queryKey: ["cabins"],
+    queryKey: ["cabin"],
     queryFn: getCabins,
   });
 
